@@ -1,0 +1,87 @@
+@CHARSET "ISO-8859-1";
+/* CSS Document */
+
+/*===== General Layout =====*/
+html { }
+body { background: none repeat scroll 0 0 #fff; color:#000000; font:14px 'Open Sans', Helvitica, Arial, Sans-serif; }
+#header { display:block; min-height:50px; }
+#footer { text-align:center; font-size:10px; }
+#container { min-height:600px;  }
+#left { }
+#center { }
+#right { }
+#main { min-height:400px;  }
+#content {  }
+#graphic { text-align:center; }
+#nav { display:inline-block; width: 100%; }
+#navbox { display:inline-block; width:100%; height:36px; background-color:#666; }
+/*======= Forms ==========*/
+.mainInfo label { display:inline-block; margin:10px; min-width:140px; text-align:right; }
+.mainInfo input, .mainInfo textarea { display:inline-block; margin:10px; vertical-align:top; }
+.mainInfo input[type=submit] { margin:0px; }
+/*====== Navigation ======*/
+.navigation {list-style:none; margin:0; padding:0; }
+.navigation li { /*margin:1px; padding:5px 15px;*/ display:block; width:170px; float:left; }
+.navigation li a { padding:9px 15px; display:block; color:#fff;  /*float:left;*/ text-decoration:none; text-align:center; }
+.navigation li.selected { text-decoration:underline; color:#fff; }
+.navigation li.selected a { cursor:default; }
+
+.navigation ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:relative;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+.navigation ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+.navigation ul a{
+	padding:4px 8px;
+	width: 120px;
+	font-size: 10px;
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.navigation li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+.navigation li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	/*background:#6b0c36;*/
+	text-decoration:underline;
+}
+.navigation li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	background:#9D8579;
+	text-decoration:none;
+}
+.navigation li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#652A14;
+}
+
+
+/* All CSS below needs organization and perhaps division to other pages */
+.formfieldset  { display: block; border:none;  background-color: transparent; padding:0px 0px 8px 0px; margin:0; }
+.formfieldset legend { font-weight:bold; color:#234B68; padding:0; margin:0px 0px 4px 0px; }
+.formbox { width:200px; }
+.dash_icons { min-width:400px; }
+.dash_icons td { padding:10px; text-align:center; }
+.dashboard { height:32px; display:inline-block; }
+.mainInfo {  }
+.mainInfo table { min-width:640px; }
+.mainInfo td, th { padding:10px; }
+.sysmsg { display:inline-block; border:1px solid #F33; background-color:#FC9; padding:20px; min-width:300px; }
+
+.column { width:950px; margin:0 auto; text-align:left; }
+.col_full { width:920px; margin:0px 15px; }
+.col_one { width:390px; margin-left:85px; }
+.col_two { width:460px; padding-right:15px; }
+.sc_col_one {  }
+.sc_col_two {  }
+
+.right { float:right; }
+.left { float:left; }
+.bold { font-weight:bold; }
+.white { color:#FFF; }
+.small { font-size:10px; }
+.vsmall { font-size:8px; }
+.icon { vertical-align:sub; }

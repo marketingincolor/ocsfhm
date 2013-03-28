@@ -1,0 +1,103 @@
+@CHARSET "ISO-8859-1";
+/* CSS Document */
+
+/*===== General Layout =====*/
+html { }
+/*body { background: none repeat scroll 0 0 #fff; color:#000000; font:12px Open Sans,Sans-serif; }*/
+body { background: url(../../images/bgnd_site.jpg) /*#652A14*/#1D0908 top center no-repeat scroll; font:14px 'Open Sans', Sans-serif, Arial, Tahoma; margin:0 auto; }
+div p { margin-left:6px; }
+#header { display:block; min-height:250px; }
+#footer { margin-top:60px; text-align:center; }
+#container { min-height:600px;  }
+#left { }
+#center { }
+#right { }
+#main { min-height:400px; max-height:1000px; overflow:hidden;  }
+#sub { display:block; }
+#content {  }
+#main #content h2 { font-family:serif, Times New Roman, Times; font-weight:normal; font-size:26px; }
+#service_list_box { background-color:white; display:inline-block; height:210px; left:-45px; /*overflow:auto;*/ position:relative; width:508px; }
+#graphic {  }
+#graphic iframe { position:relative; left:10px; }
+#nav { display:inline-block; width: 100%; }
+#navbox { margin-left:15px; display:inline-block; width:918px; height:36px; background: url(../../images/main_nav_bar.png) transparent top left no-repeat; }
+#staff_partial { margin-left:50px; width:820px; text-align:left; display:inline-block; max-height:400px; overflow:auto; }
+#gallery_verb { float:right; margin-right:20px; width:520px; top:-55px; display:inline-block; position:relative; z-index:-1;  }
+#title_block_a { width:250px; height:18px; margin-left:4px; }
+#title_block_b { width:250px; height:18px; }
+#output_block_a { font-size:12px; width:250px; height:150px; overflow:auto; margin-left:4px; }
+#output_block_b { font-size:12px; width:250px; height:150px; overflow:auto; }
+#output_block_a a, #output_block_b a { font-weight:bold; }
+.staffdata { width:400px; height:280px; float:left; padding:10px; vertical-align:top; font-size:12px; }
+.staffdata td { vertical-align:top; }
+.itemgallery { width:260px; height:180px; float:left; padding:10px; vertical-align:top; font-size:12px; }
+.itemgallery td { vertical-align:top; }
+.headline { display:block; margin-top:30px; }
+
+/*======= Forms ==========*/
+
+/*====== Navigation ======*/
+.navigation {list-style:none; margin:0; padding:0; }
+.navigation li { /*margin:1px; padding:5px 15px;*/ display:block; width:170px; float:left; }
+.navigation li a { padding:9px 15px; display:block; color:#fff;  /*float:left;*/ text-decoration:none; text-align:center; }
+.navigation li.selected { text-decoration:underline; color:#fff; }
+.navigation li.selected a { cursor:default; }
+
+.navigation ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:relative;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	z-index:20;
+}
+.navigation ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+.navigation ul a{
+	padding:4px 8px;
+	width: 120px;
+	font-size: 12px;
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.navigation li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+.navigation li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	/*background:#6b0c36;*/
+	text-decoration:underline;
+}
+.navigation li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	background:#9D8579;
+	text-decoration:none;
+}
+.navigation li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#652A14;
+}
+
+
+
+
+/* All CSS below needs organization and perhaps division to other pages */
+.formfieldset  { display: block; border:none;  background-color: transparent; padding:0px 0px 8px 0px; margin:0; }
+.formfieldset legend { font-weight:bold; color:#234B68; padding:0; margin:0px 0px 4px 0px; }
+.formbox { width:200px; }
+
+
+.column { width:950px; margin:0 auto; text-align:left; }
+.col_full { width:920px; margin:0px 15px; }
+.col_one { width:420px; margin-left:85px; }
+.col_two { width:410px; padding-right:15px; }
+.sc_col_one {  }
+.sc_col_two {  }
+.col_indent { margin-left:70px; }
+.sm_indent { margin-left:15px; }
+
+.right { float:right; }
+.left { float:left; }
+.bold { font-weight:bold; }
+.white { color:#FFF; }
+.small { font-size:10px; }
+.vsmall { font-size:8px; }
+

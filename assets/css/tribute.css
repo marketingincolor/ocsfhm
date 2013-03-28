@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+/* CSS Document */
+
+/*===== General Layout =====*/
+html { }
+body { background: url(../../images/bgnd_serv.jpg) /*#652A14*/#1D0908 top center no-repeat scroll; font:14px Open Sans, Sans-serif, Tahoma, Arial; margin:0 auto; }
+td p { margin:0px; }
+p { margin:15px; }
+#header { display:block; min-height:310px; }
+#footer { text-align:center; }
+#container { min-height:600px;  }
+#main { display:inline-block; }
+#view_controls, #view_controls2 { position:relative; right:60px; top:-60px; }
+#mname { margin:4px 50px; color:#FFF;}
+#mdates { margin:4px 65px; color:#813022; font-weight:normal; font-style:italic; }
+#trib_pic { display:block; position:absolute; float:left; height:310px; width:300px; margin-left:60px; }
+
+#service_details_container { display:block; max-height:780px; overflow:auto; background: url(../../images/tribute_page_inner_bgnd.png) transparent top right no-repeat scroll;  }
+#service_details_container table { vertical-align:top; width:880px; }
+
+#service_memory_container { background: transparent top center no-repeat scroll;  }
+#service_memory_bio { width:500px; display:inline-block; position:relative; }
+#service_memory_cnd { width:360px; height:270px; background: url(../../images/grfx_panel_bgnd_cond.png) transparent top right no-repeat; display:inline-block; position:relative; margin-right:37px; overflow:hidden; }
+#service_memory_pic { height:270px; margin-left:49px; width:408px; display:inline-block; position:relative; overflow:hidden; border:1px solid #813022; }
+#service_memory_sto { height:270px; margin-right:49px; width:408px; display:inline-block; position:relative; overflow:hidden; border:1px solid #813022; }
+
+#left { }
+#center { }
+#right { }
+#container { min-height:600px;  }
+#content {  }
+#graphic { text-align:center; }
+
+#gallery_view_box { background-color:#CCC; display:inline-block; height:100%; width:100%; }
+#gallery_box { min-height:640px; max-height:700px; overflow:auto; padding:40px; }
+
+/*======= Forms ==========*/
+/* Z-index of #mask must lower than #boxes .window */
+#mask { position:fixed; top:0; left:0; z-index:9000; background-color:#000; display:none; }
+#boxes .window { position:fixed; width:440px; display:none; z-index:9999; padding:20px; font-size:12px; }
+/* Customize your modal window here, you can add background image too */
+#boxes label { margin-bottom:15px; vertical-align:top; }
+#boxes #dialog { width:420px; height:420px; background-color:#fff; }
+#boxes #dialog #actual, #boxes #dialog #ractual { overflow:auto; height:460px; position:absolute; }
+#boxes #dialog2 { width:420px; height:420px; background-color:#fff; }
+#boxes #dialog2 #actual2, #boxes #dialog2 #ractual2 { overflow:auto; height:460px; position:absolute; }
+#boxes #dialog3 { width:420px; height:420px; background-color:#fff; }
+#boxes #dialog3 #actual3, #boxes #dialog3 #ractual3 { overflow:auto; height:460px; position:absolute; }
+#dialog p { margin:10px 14px; }
+.closex { left:440px; position:absolute; top:-18px; }
+#cond_form label, #memo_form label, #photo_form label { display:inline-block; margin:10px; min-width:80px; text-align:right; }
+#cond_form input, #memo_form input, #photo_form input { display:inline-block; margin:10px; }
+#cond_form textarea, #memo_form textarea { display:inline-block; margin:10px; width:220px; height:100px; }
+#cond_form span, #memo_form span, #photo_form span { display:inline-block; margin:0px 30px; font-size:8px; }
+
+/*====== Navigation ======*/
+#nav { display:inline-block; width: 100%; }
+#navbox { margin-left:15px; display:inline-block; width:918px; height:36px; background: url(../../images/main_nav_bar.png) transparent top left no-repeat; }
+
+
+/* All CSS below needs organization and perhaps division to other pages */
+.formfieldset  { display: block; border:none;  background-color: transparent; padding:0px 0px 8px 0px; margin:0; }
+.formfieldset legend { font-weight:bold; color:#234B68; padding:0; margin:0px 0px 4px 0px; }
+.formbox { width:200px; }
+.scrollbox { overflow:auto; height:220px; }
+.photoframe { display:block; position:absolute; }
+.mphoto { margin-left:30px; margin-top:30px; }
+
+.column { width:950px; margin:0 auto; text-align:left; }
+.col_full { width:920px; margin:0px 15px; }
+.col_one { width:390px; margin-left:85px; }
+.col_two { width:460px; padding-right:15px; }
+.sc_col_one {  }
+.sc_col_two {  }
+
+.right { float:right; }
+.left { float:left; }
+.tright { text-align:right; vertical-align:top; }
+.tleft { text-align:left; vertical-align:top; }
+.colhead { text-align:right; width:260px; vertical-align:top; }
+.bold { font-weight:bold; }
+.white { color:#FFF; }
+.small { font-size:10px; }
+.vsmall { font-size:8px; }
+
