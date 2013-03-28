@@ -72,7 +72,7 @@
 						</div>
 						<br />
 					<?php break;
-					case 'about-us':?>
+					case 'about-us': ?>
 						<?php $image_about = array(
 							'src' => ''.$content_b.'',
 							'alt' => 'Almont Funeral Home - About Us',
@@ -82,7 +82,7 @@
 							echo img($image_about);
 						?>
                     <?php break;
-                    case 'history':?>
+                    case 'history': ?>
 						<?php $image_about = array(
                             'src' => ''.$content_b.'',
                             'alt' => 'Almont Funeral Home - History',
@@ -92,7 +92,7 @@
 							echo img($image_about);
 						?>
 					<?php break;
-					case 'prearrangement':?>
+					case 'prearrangement': ?>
 						<?php $image_about = array(
 							'src' => ''.$content_b.'',
 							'alt' => 'Almont Funeral Home - Prearrangement',
@@ -102,7 +102,7 @@
 							echo img($image_about);
 						?>
 					<?php break;
-					case 'helpful-links':?>
+					case 'helpful-links': ?>
 						<?php $image_about = array(
 							'src' => ''.$content_c.'',
 							'alt' => 'Almont Funeral Home - Helpful Links',
@@ -112,7 +112,7 @@
 							echo img($image_about);
 						?>
 					<?php break;
-					case 'resources':?>
+					case 'resources': ?>
 						<?php $image_about = array(
 							'src' => ''.$content_c.'',
 							'alt' => 'Almont Funeral Home - Grief Resources',
@@ -122,7 +122,7 @@
 							echo img($image_about);
 						?>
                     <?php break;
-                    case 'floral':?>
+                    case 'floral': ?>
 						<?php $image_about = array(
                             'src' => ''.$content_c.'',
                             'alt' => 'Almont Funeral Home - Flowers',
@@ -133,7 +133,7 @@
 						?>
 
 					<?php break;
-					case 'staff':?>
+					case 'staff': ?>
 						<?php $image_about = array(
 							'src' => ''.$content_b.'',
 							'alt' => 'Almont Funeral Home - Staff',
@@ -145,7 +145,7 @@
 						
 						
 					<?php break;
-					case 'contact-us':?>
+					case 'contact-us': ?>
 						<br />
 							<iframe width="320" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?oe=utf-8&amp;q=<?php echo $ss_locstring; ?>&amp;ie=UTF8&amp;hq=&amp;hnear=<?php echo $ss_locstring; ?>&amp;gl=us&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 							<br />
