@@ -131,7 +131,6 @@
                         );
 							echo img($image_about);
 						?>
-
 					<?php break;
 					case 'staff': ?>
 						<?php $image_about = array(
@@ -142,8 +141,6 @@
 							);
 							echo img($image_about);
 						?>
-						
-						
 					<?php break;
 					case 'contact-us': ?>
 						<br />
